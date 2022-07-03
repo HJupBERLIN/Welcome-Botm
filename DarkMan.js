@@ -22,10 +22,10 @@ const listener = app.listen(process.env.PORT, () => {
 const Discord = require ("discord.js")
 const moment = require ("moment")
 const DarkMan = new Discord.Client();
-const prefix = "B!";
+const prefix = "D!";
 
 
-DarkMan.login("OTkzMjUyNzQxMTkzNDA4NjIy.GPCwTb.tUnSS2mXQ0IK9eP7CLmrHT-1uMH0pzN7fUU9O4");
+DarkMan.login("");
 DarkMan.on("ready", async () => {
   console.log(`Logged in as ${DarkMan.user.username}!`);
   DarkMan.user.setStatus("ONLINE");
@@ -43,20 +43,20 @@ DarkMan.on("message", message => {
 if (message.content === prefix +"help") {
 const embed = new Discord.MessageEmbed()
 .setColor("BLACK")
-.setAuthor("Prefix [ B! ]","")
+.setAuthor("Prefix [ D! ]","")
 .setDescription(` 
 **
 ・┊welcome [change channel]
 ・┊left [change channel]
 **
 **[ invite ]**
-**[ click here ](https://discord.com/api/oauth2/authorize?client_id=993252741193408622&permissions=8&scope=bot)** 
+**[ click here ](https://discord.com/api/oauth2/authorize?client_id=743869029638471802&permissions=8&scope=bot)** 
 **[ support ]**
-**[ click here ](https://discord.gg/xQJvCH6t8Q)**
+**[ click here ](https://discord.gg/tstcyhgQeS)**
  `)
     
-    .setFooter(` bot welcome ✨ | Coded by , Berlin`, Berlin.user.avatarURL)
-    .setURL("https://discord.gg/xQJvCH6t8Q")
+    .setFooter(` Remix Bot ✨ | Coded by , DarkMan`, DarkMan.user.avatarURL)
+    .setURL("https://discord.gg/YSx9p3e7F8")
       
     message.channel.send(embed);
       message.react("❤️");
