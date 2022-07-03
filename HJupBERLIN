@@ -25,8 +25,8 @@ const DarkMan = new Discord.Client();
 const prefix = "B!";
 
 
-DarkMan.login("OTkzMjUyNzQxMTkzNDA4NjIy.GPCwTb.tUnSS2mXQ0IK9eP7CLmrHT-1uMH0pzN7fUU9O4");
-DarkMan.on("ready", async () => {
+DarkMan.login("OTkzMjUyNzQxMTkzNDA4NjIy.GQr6SQ.ydW4-_QMjNuZIIiU65Cdz8rTH15TnQniEokjYc");
+DarkMan.on("ready", async (y) => {
   console.log(`Logged in as ${DarkMan.user.username}!`);
   DarkMan.user.setStatus("ONLINE");
   DarkMan.user.setActivity(`${prefix}help`, { type: "WATCHING" });
